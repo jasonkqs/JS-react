@@ -7,6 +7,8 @@ const fileFilter = function(dir, extName) {
     if (err) {
       throw err;
     }
+
+    
     list.forEach((file, index) => {
       if (path.extname(file) === "." + extName) {
         console.log(file);
